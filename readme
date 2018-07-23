@@ -6,7 +6,7 @@ expo start
 
 //scan QR on chrome path change App.js from main dir to ./src by changing nodemodule of expo in AppEntry.js
 // decided to keep app.js out
-
+git remote add origin https://github.com/iamnodejs007/manager.git
 
 1. Add one or more files to staging (index):	
 git add *
