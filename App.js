@@ -3,8 +3,21 @@ import { StyleSheet, Text, View } from 'react-native';
 import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 import reducers from './src/reducers';
+import {firebase} from 'firebase';
 
 export default class App extends React.Component {
+  componentWillMount(){
+    const config = {
+       apiKey: "AIzaSyCdFf2zyGbpslzp1MGdUInLt7YvHDjFzMQ",
+       authDomain: "manager-e2adb.firebaseapp.com",
+       databaseURL: "https://manager-e2adb.firebaseio.com",
+       projectId: "manager-e2adb",
+       storageBucket: "manager-e2adb.appspot.com",
+       messagingSenderId: "386923086816"
+    }
+
+    firebase.initializeApp(config);
+  }
   render() {
     return (
       <Provider store={createStore(reducers)}>
