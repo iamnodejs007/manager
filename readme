@@ -27,3 +27,5 @@ git checkout <branchname>
 
 6. List all the branches in your repo, and also tell you what branch you're currently in:	
 git branch
+
+
